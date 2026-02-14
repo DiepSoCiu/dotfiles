@@ -1,0 +1,13 @@
+2026-02-13 22:08:11.200 [info] Extension host with pid 11938 started
+2026-02-13 22:08:11.269 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2026-02-13 22:08:11.286 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2026-02-13 22:08:11.362 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2026-02-13 22:08:11.365 [info] ExtensionService#_doActivateExtension JonathanHarty.gruvbox-material-icon-theme, startup: true, activationEvent: '*'
+2026-02-13 22:08:11.392 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2026-02-13 22:08:11.428 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2026-02-13 22:08:11.516 [info] Eager extensions activated
+2026-02-13 22:08:11.517 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2026-02-13 22:08:11.518 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2026-02-13 22:08:11.530 [info] ExtensionService#_doActivateExtension tonybaloney.vscode-pets, startup: false, activationEvent: 'onStartupFinished'
+2026-02-13 22:08:39.986 [info] Extension host terminating: renderer closed the MessagePort
+2026-02-13 22:08:39.998 [info] Extension host with pid 11938 exiting with code 0

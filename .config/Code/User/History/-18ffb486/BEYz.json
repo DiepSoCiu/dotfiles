@@ -1,0 +1,119 @@
+{
+  // ============================================================================
+  // APPEARANCE & THEME
+  // ============================================================================
+  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "workbench.iconTheme": "gruvbox-material-icon-theme",
+  "workbench.productIconTheme": "material-product-icons",
+
+  // ============================================================================
+  // WINDOW & LAYOUT
+  // ============================================================================
+  "window.titleBarStyle": "native",
+  "window.menuStyle": "custom",
+  "window.enableMenuBarMnemonics": false,
+  "window.customMenuBarAltFocus": false,
+  "window.zoomLevel": 0.5,
+  "window.restoreWindows": "none",
+  "window.confirmSaveUntitledWorkspace": false,
+  "window.commandCenter": false,
+  
+  "workbench.startupEditor": "none",
+  "workbench.statusBar.visible": false,
+  "workbench.activityBar.location": "bottom",
+  "workbench.layoutControl.enabled": false,
+  "workbench.navigationControl.enabled": false,
+  
+  // Editor tabs and title
+  "workbench.editor.showTabs": "none",
+  "workbench.editor.titleScrollbarVisibility": "hidden",
+  "workbench.editor.autoLockGroups": {
+    "workbench.input.interactive": true
+  },
+
+  // ============================================================================
+  // EDITOR - FONT & SPACING
+  // ============================================================================
+  "editor.fontFamily": "'JetBrains Mono Nerd Font', 'Symbols Nerd Font'",
+  "editor.lineHeight": 1.8,
+  "editor.padding.top": 20,
+  "editor.padding.bottom": 20,
+  "editor.wordWrap": "on",
+
+  // ============================================================================
+  // EDITOR - UI ELEMENTS
+  // ============================================================================
+  "editor.minimap.enabled": false,
+  "editor.stickyScroll.enabled": false,
+  "breadcrumbs.enabled": false,
+  "editor.unicodeHighlight.invisibleCharacters": false,
+
+  // ============================================================================
+  // EDITOR - CURSOR & ANIMATIONS
+  // ============================================================================
+  "editor.cursorStyle": "block",
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+  
+  "editor.smoothScrolling": true,
+  "workbench.list.smoothScrolling": true,
+  "terminal.integrated.smoothScrolling": true,
+
+  // ============================================================================
+  // FILES & SECURITY
+  // ============================================================================
+  "files.autoSave": "afterDelay",
+  "security.workspace.trust.enabled": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  
+  "workbench.editorAssociations": {
+    "*.pdf": "latex-workshop-pdf-hook"
+  },
+
+  // ============================================================================
+  // LATEX WORKSHOP - SIOYEK SYNCTEX CONFIGURATION
+  // ============================================================================
+  // PDF Viewer
+  "latex-workshop.view.pdf.viewer": "external",
+  
+  // External viewer command (Sioyek)
+  "latex-workshop.view.pdf.external.viewer.command": "sioyek",
+  "latex-workshop.view.pdf.external.viewer.args": [
+    "--reuse-instance",
+    "%PDF%"
+  ],
+  
+  // SyncTeX configuration for Sioyek
+  "latex-workshop.view.pdf.external.synctex.command": "sioyek",
+  "latex-workshop.view.pdf.external.synctex.args": [
+      "--inverse-search",
+      "code -r -g \"%1:%2\"",
+      "--reuse-instance",
+      "--forward-search-file",
+      "%TEX%",
+      "--forward-search-line",
+      "%LINE%",
+      "%PDF%"
+]
+,
+  
+  // SyncTeX settings
+  "latex-workshop.synctex.afterBuild.enabled": true,
+  "latex-workshop.synctex.path": "synctex",
+  
+  // Auto clean auxiliary files
+  "latex-workshop.latex.autoClean.run": "onBuilt",
+
+  // ============================================================================
+  // AI & CHAT (Disabled)
+  // ============================================================================
+  "chat.commandCenter.enabled": false,
+  "chat.disableAIFeatures": true,
+
+  // ============================================================================
+  // VSCODE PETS
+  // ============================================================================
+  "vscode-pets.theme": "forest",
+  "vscode-pets.throwBallWithMouse": true,
+  "vscode-pets.petSize": "small"
+}

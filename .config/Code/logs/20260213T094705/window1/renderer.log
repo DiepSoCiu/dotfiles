@@ -1,0 +1,22 @@
+2026-02-13 09:47:07.991 [info] Started local extension host with pid 82328.
+2026-02-13 09:47:08.116 [info] MCP Registry configured: https://api.mcp.github.com
+2026-02-13 09:47:08.246 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2026-02-13 09:47:08.422 [error] [Extension Host] TypeError: Cannot read properties of undefined (reading 'packageJSON')
+	at m (/home/diepsociu/.vscode/extensions/jonathanharty.gruvbox-material-icon-theme-1.1.5/dist/extension.js:1:59422)
+	at /home/diepsociu/.vscode/extensions/jonathanharty.gruvbox-material-icon-theme-1.1.5/dist/extension.js:1:59088
+	at Generator.next (<anonymous>)
+	at /home/diepsociu/.vscode/extensions/jonathanharty.gruvbox-material-icon-theme-1.1.5/dist/extension.js:1:58625
+	at new Promise (<anonymous>)
+	at a (/home/diepsociu/.vscode/extensions/jonathanharty.gruvbox-material-icon-theme-1.1.5/dist/extension.js:1:58370)
+	at t.checkThemeStatus (/home/diepsociu/.vscode/extensions/jonathanharty.gruvbox-material-icon-theme-1.1.5/dist/extension.js:1:59018)
+	at /home/diepsociu/.vscode/extensions/jonathanharty.gruvbox-material-icon-theme-1.1.5/dist/extension.js:1:52529
+	at Generator.next (<anonymous>)
+	at a (/home/diepsociu/.vscode/extensions/jonathanharty.gruvbox-material-icon-theme-1.1.5/dist/extension.js:1:52022)
+2026-02-13 09:47:08.423 [error] [Extension Host] TypeError: Cannot read properties of undefined (reading 'packageJSON')
+	at t.getConfigProperties (/home/diepsociu/.vscode/extensions/jonathanharty.gruvbox-material-icon-theme-1.1.5/dist/extension.js:1:55948)
+	at a (/home/diepsociu/.vscode/extensions/jonathanharty.gruvbox-material-icon-theme-1.1.5/dist/extension.js:1:53104)
+	at t.detectConfigChanges (/home/diepsociu/.vscode/extensions/jonathanharty.gruvbox-material-icon-theme-1.1.5/dist/extension.js:1:52934)
+	at /home/diepsociu/.vscode/extensions/jonathanharty.gruvbox-material-icon-theme-1.1.5/dist/extension.js:1:52624
+	at Generator.next (<anonymous>)
+	at a (/home/diepsociu/.vscode/extensions/jonathanharty.gruvbox-material-icon-theme-1.1.5/dist/extension.js:1:52022)
+2026-02-13 09:47:10.590 [info] [perf] Render performance baseline is 14ms

@@ -1,0 +1,255 @@
+* {
+    black:      #282828;
+    red:        #cc241d;
+    green:      #98971a;
+    yellow:     #d79921;
+    blue:       #458588;
+    purple:     #b16286;
+    aqua:       #689d6a;
+    gray:       #a89984;
+    brgray:     #928374;
+    brred:      #fb4934;
+    brgreen:    #b8bb26;
+    bryellow:   #fabd2f;
+    brblue:     #83a598;
+    brpurple:   #d3869b;
+    braqua:     #8ec07c;
+    white:      #ebdbb2;
+    bg1:        #3c3836;
+    bg2:        #504945;
+    unfocused:  rgba(55, 55, 51, 1);
+    black-90:   rgba(40,40,40,0.9);
+    black-80:   rgba(40,40,40,0.8);
+    black-70:   rgba(40,40,40,0.7);
+    black-60:   rgba(40,40,40,0.6);
+    black-50:   rgba(40,40,40,0.5);
+    black-45:   rgba(40,40,40,0.45);
+    black-40:   rgba(40,40,40,0.4);
+    black-38:   rgba(40,40,40,0.38);
+    black-36:   rgba(40,40,40,0.36);
+    black-35:   rgba(40,40,40,0.35);
+    black-34:   rgba(40,40,40,0.34);
+    black-32:   rgba(40,40,40,0.32);
+    black-30:   rgba(40,40,40,0.3);
+    black-25:   rgba(40,40,40,0.25);
+    black-20:   rgba(40,40,40,0.2);
+    black-10:   rgba(40,40,40,0.1);
+}
+
+/*****----- Configuration -----*****/
+configuration {
+    show-icons:                 false;
+    fake-transparency:          false;
+}
+
+/*****----- Global Properties -----*****/
+* {
+    font: "JetBrainsMono Nerd Font Mono semibold 11";
+    font-weight: bold;
+}
+
+/*****----- Main Window -----*****/
+window {
+    transparency:                "real";
+    location:                    northeast;
+    anchor:                      center;
+    fullscreen:                  false;
+    width:                       400px;
+    x-offset:                    -2px;
+    y-offset:                    2px;
+    enabled:                     true;
+    margin:                      0px;
+    padding:                     0px;
+    border-radius:               0px;
+    border-color:                transparent;
+    cursor:                      "default";
+    background-color:            transparent;
+}
+
+/*****----- Main Box -----*****/
+mainbox {
+    enabled:                     true;
+    spacing:                     0px;
+    margin:                      0px;
+    padding:                     -3px;
+    border:                      0px solid;
+    border-radius:               0px;
+    border-color:                @white;
+    background-color:            @black-40;
+    children:                    ["mainboxb"];
+}
+
+/*****----- mainbox_clone-----*****/
+mainboxb {
+    enabled:                     true;
+    spacing:                     0px;
+    margin:                      0px;
+    padding:                     3px;
+    border:                      0px;
+    border-radius:               5px;
+    background-color:            @black-10;
+    text-color:                  @white;
+    children:                    ["mainboxc"];
+}
+
+mainboxc {
+    enabled:                     true;
+    spacing:                     0px;
+    margin:                      0px;
+    padding:                     3px;
+    border:                      0px;
+    border-radius:               5px;
+    background-color:            @black-10;
+    text-color:                  @white;
+    children:                    ["mainboxd"];
+}
+
+mainboxd {
+    enabled:                     true;
+    spacing:                     0px;
+    margin:                      0px;
+    padding:                     3px;
+    border:                      0px;
+    border-radius:               5px;
+    background-color:            @black-20;
+    text-color:                  @white;
+    children:                    ["mainboxe"];
+}
+
+mainboxe {
+    enabled:                     true;
+    spacing:                     0px;
+    margin:                      0px;
+    padding:                     3px;
+    border:                      0px;
+    border-radius:               5px;
+    background-color:            @black-40;
+    text-color:                  @white;
+    children:                    ["mainboxf"];
+}
+
+mainboxf {
+    enabled:                     true;
+    spacing:                     0px;
+    margin:                      0px;
+    padding:                     3px;
+    border:                      0px;
+    border-radius:               5px;
+    background-color:            @black-50;
+    text-color:                  @white;
+    children:                    ["mainboxg"];
+}
+
+mainboxg {
+    enabled:                     true;
+    spacing:                     0px;
+    margin:                      0px;
+    padding:                     3px;
+    border:                      0px;
+    border-radius:               5px;
+    background-color:            @white;
+    text-color:                  @black-90;
+    children:                    ["inputbar", "message", "listview"];
+}
+
+/*****----- Inputbar -----*****/
+inputbar {
+    enabled:                     true;
+    spacing:                     10px;
+    margin:                      0px;
+    padding:                     10px;
+    border:                      0px 0px 0px 0px;
+    border-radius:               0px;
+    border-color:                @bg1;
+    background-color:            transparent;
+    text-color:                  @black-90;
+    children:                    ["prompt"];
+}
+
+prompt {
+    enabled:                     true;
+    padding:                     0px;
+    border-radius:               0px;
+    background-color:            transparent;
+    text-color:                  @black-90;
+}
+
+/*****----- Message -----*****/
+message {
+    enabled:                     true;
+    margin:                      0px;
+    padding:                     10px;
+    border:                      0px 0px 0px 0px;
+    border-radius:               0px;
+    border-color:                transparent;
+    background-color:            transparent;
+    text-color:                  @black-90;
+}
+
+textbox {
+    background-color:            inherit;
+    text-color:                  @braqua;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+    blink:                       false;
+    markup:                      true;
+}
+
+/*****----- Listview -----*****/
+listview {
+    enabled:                     true;
+    columns:                     1;
+    lines:                       7;
+    cycle:                       false;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               true;
+    spacing:                     5px;
+    margin:                      0px;
+    padding:                     10px;
+    border:                      0px solid;
+    border-radius:               0px;
+    background-color:            @white;
+    text-color:                  @black-90;
+    cursor:                      "default";
+}
+
+/*****----- Elements -----*****/
+element {
+    enabled:                     true;
+    spacing:                     0px;
+    margin:                      0px;
+    padding:                     12px;
+    border:                      0px solid;
+    border-radius:               3px;
+    background-color:            @white;
+    text-color:                  @black-90;
+    cursor:                      pointer;
+}
+
+element-text {
+    background-color:            transparent;
+    text-color:                  inherit;
+    cursor:                      inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+    font:                        "JetBrainsMono Nerd Font Mono semibold 10";
+}
+
+element selected.normal {
+    background-color:            @unfocused;
+    text-color:                  @white;
+}
+
+element normal.normal {
+    background-color:            transparent;
+    text-color:                  @black-90;
+}
+
+element alternate.normal {
+    background-color:            transparent;
+    text-color:                  @black-90;
+}

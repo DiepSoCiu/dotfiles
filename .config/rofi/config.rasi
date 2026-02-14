@@ -1,0 +1,26 @@
+/*
+#  ____        __ _
+# |  _ \ ___  / _(_)
+# | |_) / _ \| |_| |
+# |  _ < (_) |  _| |
+# |_| \_\___/|_| |_|
+#
+# by Stephan Raabe (2023)
+# -----------------------------------------------------
+*/
+
+/* ---- Configuration ---- */
+configuration {
+    modi:                       "drun,filebrowser,window,run";
+    show-icons:                  true;
+    display-drun:                " ";
+    display-run:                 " ";
+    display-filebrowser:         "";
+    display-window:              "";
+	drun-display-format:         "{name}";
+    hover-select:                true;
+    me-select-entry:             "";
+    me-accept-entry:             "!MousePrimary";
+    kb-cancel:                   "MousePrimary";
+    window-format:               "{w} · {c} · {t}";
+}

@@ -1,0 +1,219 @@
+@import url("resource:///org/gtk/libgtk/theme/Adwaita/gtk-contained-dark.css");
+
+/* Override Gruvbox Colors */
+@define-color theme_fg_color #ebdbb2;
+@define-color theme_text_color #ebdbb2;
+@define-color theme_bg_color #1d2021;
+@define-color theme_base_color #1d2021;
+@define-color theme_selected_bg_color #ebdbb2;
+@define-color theme_selected_fg_color #1d2021;
+
+@define-color insensitive_bg_color #1d2021;
+@define-color insensitive_fg_color #7c6f64;
+@define-color insensitive_base_color #1d2021;
+
+/* BACKDROP (unfocused) GIỐNG focus */
+@define-color theme_unfocused_fg_color #ebdbb2;
+@define-color theme_unfocused_bg_color #1d2021;
+@define-color theme_unfocused_base_color #1d2021;
+@define-color theme_unfocused_selected_bg_color #ebdbb2;
+@define-color theme_unfocused_selected_fg_color #1d2021;
+@define-color unfocused_insensitive_color #7c6f64;
+
+/* BORDER GIỐNG BACKGROUND */
+@define-color borders #1d2021;
+@define-color unfocused_borders #1d2021;
+
+@define-color warning_color #fabd2f;
+@define-color error_color #cc241d;
+@define-color success_color #98971a;
+
+/* Window colors */
+@define-color wm_title #ebdbb2;
+@define-color wm_unfocused_title #ebdbb2;
+@define-color wm_bg_a #1d2021;
+@define-color wm_bg_b #1d2021;
+
+/* Content view */
+@define-color content_view_bg #1d2021;
+@define-color text_view_bg #1d2021;
+
+/* MỌI BACKGROUND GIỐNG NHAU #1d2021 */
+window,
+window:backdrop,
+.background,
+.background:backdrop,
+headerbar,
+headerbar:backdrop,
+.titlebar,
+.titlebar:backdrop,
+notebook,
+notebook:backdrop,
+notebook > stack,
+notebook > stack:backdrop,
+scrolledwindow,
+scrolledwindow:backdrop,
+viewport,
+viewport:backdrop,
+frame,
+frame:backdrop,
+list,
+list:backdrop,
+row,
+row:backdrop {
+    background-color: #1d2021;
+    color: #ebdbb2;
+}
+
+/* Entry backgrounds */
+entry,
+entry:backdrop,
+entry:focus,
+entry:active,
+textview text,
+textview text:backdrop,
+textview text:focus,
+textview text:active,
+.view,
+.view:backdrop,
+.view:focus,
+.view:active {
+    background-color: #1d2021;
+    color: #ebdbb2;
+    border-color: #1d2021;
+    box-shadow: none;
+}
+
+/* Button backgrounds */
+button,
+button:backdrop,
+button:hover,
+button:active,
+button:focus {
+    background-color: #282828;
+    color: #ebdbb2;
+    border-color: #1d2021;
+}
+
+/* Selection - CHỮ ĐEN NỀN TRẮNG/KEM */
+selection,
+selection:backdrop,
+selection:focus,
+*:selected,
+*:selected:backdrop,
+*:selected:focus,
+*:selected:active,
+entry selection,
+entry selection:backdrop,
+entry selection:focus,
+textview text selection,
+textview text selection:backdrop,
+textview text selection:focus,
+treeview:selected,
+treeview:selected:backdrop,
+treeview:selected:focus,
+row:selected,
+row:selected:backdrop,
+row:selected:focus,
+calendar:selected,
+calendar:selected:backdrop,
+.view:selected,
+.view:selected:backdrop,
+iconview:selected,
+iconview:selected:backdrop,
+flowbox flowboxchild:selected,
+flowbox flowboxchild:selected:backdrop {
+    background-color: #ebdbb2 !important;
+    color: #1d2021 !important;
+}
+
+/* Border colors - GIỐNG BACKGROUND cho tất cả states */
+*,
+*:backdrop,
+*:hover,
+*:active,
+*:focus,
+*:checked {
+    border-color: #1d2021;
+}
+
+/* Loại bỏ box-shadow khi focus/active */
+entry:focus,
+entry:active,
+button:focus,
+button:active,
+*:focus,
+*:active {
+    box-shadow: none;
+    outline: none;
+}
+
+/* Tắt opacity changes */
+*:backdrop {
+    opacity: 1.0;
+}
+
+/* Sidebar */
+.sidebar,
+.sidebar:backdrop,
+placessidebar,
+placessidebar:backdrop {
+    background-color: #1d2021;
+    border-color: #1d2021;
+}
+
+/* Menu/Popover */
+menu,
+menu:backdrop,
+.menu,
+.menu:backdrop,
+popover,
+popover:backdrop {
+    background-color: #1d2021;
+    border-color: #1d2021;
+}
+
+/* Toolbar */
+toolbar,
+toolbar:backdrop,
+.toolbar,
+.toolbar:backdrop {
+    background-color: #1d2021;
+    border-color: #1d2021;
+}
+
+/* Notebook tabs */
+notebook > header,
+notebook > header:backdrop {
+    background-color: #1d2021;
+    border-color: #1d2021;
+}
+
+notebook > header > tabs > tab,
+notebook > header > tabs > tab:backdrop,
+notebook > header > tabs > tab:checked {
+    background-color: #1d2021;
+    border-color: #1d2021;
+}
+
+/* Scrollbar */
+scrollbar,
+scrollbar:backdrop {
+    background-color: #1d2021;
+    border-color: #1d2021;
+}
+
+/* Scale/Progress */
+scale trough,
+scale trough:backdrop,
+progressbar trough,
+progressbar trough:backdrop {
+    background-color: #282828;
+    border-color: #1d2021;
+}
+
+scale highlight,
+progressbar progress {
+    background-color: #ebdbb2;
+    border-color: #1d2021;
+}

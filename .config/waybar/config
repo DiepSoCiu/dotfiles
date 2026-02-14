@@ -1,0 +1,45 @@
+
+{
+
+"include": [
+  "~/.config/waybar/modules/Modules",
+  "~/.config/waybar/modules/ModulesWorkspaces",
+  "~/.config/waybar/modules/ModulesCustom",
+  ],
+"layer": "top",
+//"mode": "dock",
+"exclusive": true,
+"passthrough": false,
+"position": "top",
+"spacing": 3,
+"fixed-center": true,
+"ipc": true,
+"margin-top": 0,
+"margin-left": 0,
+"margin-right": 0,
+
+"modules-left": [
+	"hyprland/workspaces#rw",
+	"custom/minimize",
+	],
+
+"modules-center": [
+	"clock",
+	],
+
+"modules-right": [
+	"custom/input_method",
+	"custom/separator#blank",
+	"battery",
+	"custom/separator#blank",
+	"backlight",
+	"custom/separator#blank",
+	"bluetooth",
+	"custom/separator#blank",
+	"pulseaudio",
+	"custom/separator#blank",
+	"network",
+    "custom/separator#line",
+	"custom/power",
+	],
+}

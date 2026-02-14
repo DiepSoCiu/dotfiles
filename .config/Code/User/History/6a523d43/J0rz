@@ -1,0 +1,19 @@
+#!/bin/bash
+export QT_QPA_PLATFORM=xcb
+export QT_QPA_PLATFORMTHEME=xdgdesktopportal
+
+# Start sioyek with file
+/usr/bin/sioyek-bin "$@" &
+SIOYEK_PID=$!
+
+# Wait until sioyek process is ready (check if window exists)
+for i in {1..50}; do
+    if xdotool search --pid $SIOYEK_PID 2>/dev/null; then
+        break
+    fi
+    sleep 0.01
+done
+
+# Send toggle commands
+/usr/bin/sioyek-bin --execute-command toggle_synctex
+/usr/bin/sioyek-bin --execute-command toggle_custom_color

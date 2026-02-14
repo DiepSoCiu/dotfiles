@@ -1,0 +1,4 @@
+#!/bin/bash
+export QT_QPA_PLATFORM=xcb
+export QT_QPA_PLATFORMTHEME=xdgdesktopportal
+exec /usr/bin/sioyek-bin "$@"

@@ -1,0 +1,47 @@
+@import url("resource:///org/gtk/libgtk/theme/Adwaita/gtk-contained-dark.css");
+
+/* Override Gruvbox Colors */
+@define-color theme_fg_color #ebdbb2;
+@define-color theme_text_color #ebdbb2;
+@define-color theme_bg_color #1d2021;
+@define-color theme_base_color #1d2021;
+@define-color theme_selected_bg_color #d79921;
+@define-color theme_selected_fg_color #1d2021;
+
+@define-color insensitive_bg_color #282828;
+@define-color insensitive_fg_color #7c6f64;
+@define-color insensitive_base_color #1d2021;
+
+@define-color theme_unfocused_fg_color #a89984;
+@define-color theme_unfocused_bg_color #1d2021;
+@define-color theme_unfocused_base_color #282828;
+@define-color theme_unfocused_selected_bg_color #d79921;
+@define-color theme_unfocused_selected_fg_color #1d2021;
+
+@define-color borders #282828;
+@define-color unfocused_borders #282828;
+
+@define-color warning_color #fabd2f;
+@define-color error_color #cc241d;
+@define-color success_color #98971a;
+
+/* Window colors */
+@define-color wm_title #ebdbb2;
+@define-color wm_unfocused_title #a89984;
+@define-color wm_bg_a #1d2021;
+@define-color wm_bg_b #1d2021;
+
+/* Content view */
+@define-color content_view_bg #1d2021;
+@define-color text_view_bg #1d2021;
+
+/* Override specific widget colors */
+window { background-color: #1d2021; }
+headerbar { background-color: #1d2021; color: #ebdbb2; }
+.background { background-color: #1d2021; color: #ebdbb2; }
+entry { background-color: #282828; color: #ebdbb2; }
+textview text { background-color: #1d2021; color: #ebdbb2; }
+button { background-color: #282828; color: #ebdbb2; }
+
+/* Selection colors */
+selection, *:selected { background-color: #d79921; color: #1d2021; }

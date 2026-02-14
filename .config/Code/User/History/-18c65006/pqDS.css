@@ -1,0 +1,94 @@
+@import url("resource:///org/gtk/libgtk/theme/Adwaita/gtk-contained-dark.css");
+
+/* Override Gruvbox Colors */
+@define-color theme_fg_color #ebdbb2;
+@define-color theme_text_color #ebdbb2;
+@define-color theme_bg_color #1d2021;
+@define-color theme_base_color #1d2021;
+@define-color theme_selected_bg_color #ebdbb2;
+@define-color theme_selected_fg_color #1d2021;
+
+@define-color insensitive_bg_color #1d2021;
+@define-color insensitive_fg_color #7c6f64;
+@define-color insensitive_base_color #1d2021;
+
+/* QUAN TRỌNG: Backdrop (unfocused) GIỐNG focus */
+@define-color theme_unfocused_fg_color #ebdbb2;
+@define-color theme_unfocused_bg_color #1d2021;
+@define-color theme_unfocused_base_color #1d2021;
+@define-color theme_unfocused_selected_bg_color #ebdbb2;
+@define-color theme_unfocused_selected_fg_color #1d2021;
+@define-color unfocused_insensitive_color #7c6f64;
+
+@define-color borders #282828;
+@define-color unfocused_borders #282828;
+
+@define-color warning_color #fabd2f;
+@define-color error_color #cc241d;
+@define-color success_color #98971a;
+
+/* Window colors */
+@define-color wm_title #ebdbb2;
+@define-color wm_unfocused_title #ebdbb2;
+@define-color wm_bg_a #1d2021;
+@define-color wm_bg_b #1d2021;
+
+/* Content view */
+@define-color content_view_bg #1d2021;
+@define-color text_view_bg #1d2021;
+
+/* Override specific widget colors - FOCUS VÀ UNFOCUS GIỐNG NHAU */
+window,
+window:backdrop {
+    background-color: #1d2021;
+    color: #ebdbb2;
+}
+
+headerbar,
+headerbar:backdrop {
+    background-color: #1d2021;
+    color: #ebdbb2;
+}
+
+.background,
+.background:backdrop {
+    background-color: #1d2021;
+    color: #ebdbb2;
+}
+
+entry,
+entry:backdrop {
+    background-color: #282828;
+    color: #ebdbb2;
+    border-color: #282828;
+}
+
+textview text,
+textview text:backdrop {
+    background-color: #1d2021;
+    color: #ebdbb2;
+}
+
+button,
+button:backdrop {
+    background-color: #282828;
+    color: #ebdbb2;
+}
+
+/* Selection - CHỮ ĐEN NỀN TRẮNG */
+selection,
+selection:backdrop,
+*:selected,
+*:selected:backdrop,
+entry selection,
+entry selection:backdrop,
+textview text selection,
+textview text selection:backdrop {
+    background-color: #ebdbb2;
+    color: #1d2021;
+}
+
+/* Tắt opacity changes khi backdrop */
+*:backdrop {
+    opacity: 1.0;
+}

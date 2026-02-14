@@ -1,0 +1,85 @@
+/* Window Configuration */
+#window {
+    fullscreen:         false;
+    hide-scrollbar:     true;
+    line-padding:       10;
+    padding:            10px;
+    width:              400px;
+}
+
+/* Mainbox Configuration */
+#mainbox {
+    children:           [message, inputbar, listview];
+    border:             0;
+    padding:            0;
+    background-color:   @background;
+}
+
+/* Message Configuration */
+#message {
+    padding:            0px 1px 10px;
+}
+
+/* Listview Configuration */
+#listview {
+    fixed-height:       0;
+    border:             2px 0px 0px;
+    spacing:            3px;
+    scrollbar:          false;
+    padding:            1px 1px 1px;
+    columns:            7;
+    lines:              8;
+}
+
+/* Element Configuration */
+#element {
+    border:             0;
+    padding:            8px 0px 0px;
+    horizontal-align:   true;
+}
+
+/* Mode Switcher Configuration */
+#mode-switcher {
+    border:             0px 0px 0px;
+}
+
+/* Button Configuration */
+#button {
+    spacing:            0;
+}
+
+#button.selected {
+}
+
+/* Inputbar Configuration */
+#inputbar {
+    children:           [prompt, textbox-prompt-colon, entry, case-indicator];
+    spacing:            0;
+    padding:            0 0 0 80;
+    border:             1 0 0 0;
+    border-color:       @border;
+}
+
+/* Prompt Configuration */
+#prompt {
+    spacing:            0;
+    padding:            10 0 0 0;
+}
+
+/* Textbox Prompt Colon Configuration */
+#textbox-prompt-colon {
+    expand:             false;
+    str:                " ";
+    margin:             0px 0.3em 0em 0em;
+}
+
+/* Entry Configuration */
+#entry {
+    spacing:            0;
+    padding:            10 0 0 0;
+}
+
+/* Case Indicator Configuration */
+#case-indicator {
+    spacing:            0;
+}

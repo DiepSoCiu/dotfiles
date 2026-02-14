@@ -1,0 +1,13 @@
+#!/bin/bash
+export QT_QPA_PLATFORM=xcb
+export QT_QPA_PLATFORMTHEME=xdgdesktopportal
+
+# Start sioyek with file
+/usr/bin/sioyek-bin "$@" &
+
+# Wait for window to appear
+sleep 0.1
+
+# Send toggle commands to the running instance
+/usr/bin/sioyek-bin --execute-command toggle_synctex
+/usr/bin/sioyek-bin --execute-command toggle_custom_color

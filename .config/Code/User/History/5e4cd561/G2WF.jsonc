@@ -1,0 +1,88 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+
+  "logo": {
+    "source": "~/.config/fastfetch/MiyamotoMusashi_eat_rice.png",
+    "height": 15,
+  },
+
+  "display": {
+    "separator": "  ",
+  },
+
+  "modules": [
+    {
+      "type": "command",
+      "key": "",
+      "keyColor": "Green",
+      "text": "echo All kind people are strong - Miyamoto",
+    },
+    {
+      "type": "custom",
+      "format": "──────────────────────────────────────────────────",
+    },
+
+    {
+      "type": "kernel",
+      "key": "󰣇...OS",
+      "format": "{2}",
+      "keyColor": "#fabd2f",
+    },
+    {
+      "type": "wm",
+      "key": "...WM",
+      "format": "{2}",
+      "keyColor": "#fabd2f",
+    },
+    {
+      "type": "terminal",
+      "key": "..TER",
+      "keyColor": "#fabd2f",
+    },
+    {
+      "type": "custom",
+      "format": "──────────────────────────────────────────────────",
+    },
+
+    {
+      "type": "cpu",
+      "key": "..CPU",
+      "format": "{1}",
+      "keyColor": "#fabd2f",
+    },
+    {
+      "type": "gpu",
+      "format": "{1} {2}",
+      "key": "󰊴..GPU",
+      "keyColor": "#fabd2f",
+    },
+    {
+      "type": "disk",
+      "key": "󱦟..AGE",
+      "folders": "/",
+      "format": "{days} days",
+      "keyColor": "#fabd2f",
+    },
+
+    {
+      "type": "memory",
+      "key": "󰨣..RAM",
+      "keyColor": "#fabd2f",
+    },
+    {
+      "type": "uptime",
+      "key": "󱫐.TIME",
+      "keyColor": "#fabd2f",
+    },
+    {
+      "type": "custom",
+      "format": "──────────────────────────────────────────────────",
+    },
+    {
+      "type": "display",
+      "key": "󰍹...DP",
+      "format": "{1}x{2} @ {3}Hz [{7}]",
+      "keyColor": "#fabd2f",
+    },
+  ],
+}

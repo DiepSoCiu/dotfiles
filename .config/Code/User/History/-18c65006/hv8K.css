@@ -1,0 +1,145 @@
+@import url("resource:///org/gtk/libgtk/theme/Adwaita/gtk-contained-dark.css");
+
+/* Override Gruvbox Colors - NỀN #1d2021 */
+@define-color theme_fg_color #ebdbb2;
+@define-color theme_text_color #ebdbb2;
+@define-color theme_bg_color #1d2021;
+@define-color theme_base_color #1d2021;
+@define-color theme_selected_bg_color #ebdbb2;
+@define-color theme_selected_fg_color #1d2021;
+
+@define-color insensitive_bg_color #1d2021;
+@define-color insensitive_fg_color #7c6f64;
+@define-color insensitive_base_color #1d2021;
+
+@define-color theme_unfocused_fg_color #ebdbb2;
+@define-color theme_unfocused_bg_color #1d2021;
+@define-color theme_unfocused_base_color #1d2021;
+@define-color theme_unfocused_selected_bg_color #ebdbb2;
+@define-color theme_unfocused_selected_fg_color #1d2021;
+@define-color unfocused_insensitive_color #7c6f64;
+
+@define-color borders #1d2021;
+@define-color unfocused_borders #1d2021;
+
+@define-color warning_color #fabd2f;
+@define-color error_color #cc241d;
+@define-color success_color #98971a;
+
+@define-color wm_title #ebdbb2;
+@define-color wm_unfocused_title #ebdbb2;
+@define-color wm_bg_a #1d2021;
+@define-color wm_bg_b #1d2021;
+
+@define-color content_view_bg #1d2021;
+@define-color text_view_bg #1d2021;
+
+/* TẤT CẢ NỀN = #1d2021 */
+window,
+window:backdrop,
+window:active,
+.background,
+.background:backdrop,
+headerbar,
+headerbar:backdrop,
+.titlebar,
+.titlebar:backdrop,
+notebook,
+notebook:backdrop,
+notebook > stack,
+notebook > stack:backdrop,
+scrolledwindow,
+scrolledwindow:backdrop,
+viewport,
+viewport:backdrop,
+frame,
+frame:backdrop,
+list,
+list:backdrop,
+row,
+row:backdrop,
+entry,
+entry:backdrop,
+entry:focus,
+entry:active,
+entry:disabled,
+textview,
+textview:backdrop,
+textview text,
+textview text:backdrop,
+.view,
+.view:backdrop,
+popover,
+popover:backdrop,
+popover.background,
+menu,
+menu:backdrop,
+menuitem,
+menuitem:backdrop,
+.sidebar,
+.sidebar:backdrop,
+toolbar,
+toolbar:backdrop,
+searchbar,
+searchbar:backdrop,
+notebook > header,
+notebook > header:backdrop,
+notebook > header > tabs > tab,
+notebook > header > tabs > tab:backdrop,
+scrollbar,
+scrollbar:backdrop {
+    background-color: #1d2021 !important;
+    background-image: none !important;
+    color: #ebdbb2;
+    border-color: #1d2021 !important;
+}
+
+/* Button = #282828 để phân biệt */
+button,
+button:backdrop,
+button:hover,
+button:active {
+    background-color: #282828 !important;
+    background-image: none !important;
+    color: #ebdbb2;
+    border-color: #1d2021 !important;
+}
+
+/* Selection = CHỮ ĐEN (#1d2021) trên NỀN TRẮNG (#ebdbb2) */
+selection,
+selection:backdrop,
+*:selected,
+*:selected:backdrop,
+entry selection,
+textview text selection,
+treeview:selected,
+row:selected,
+calendar:selected,
+.view:selected,
+iconview:selected,
+flowbox flowboxchild:selected {
+    background-color: #ebdbb2 !important;
+    color: #1d2021 !important;
+}
+
+/* Loại bỏ effects */
+*:focus,
+*:active,
+*:backdrop {
+    box-shadow: none !important;
+    outline: none;
+    opacity: 1.0 !important;
+}
+
+/* Scale/Progress */
+scale trough,
+progressbar trough {
+    background-color: #282828 !important;
+    border-color: #1d2021 !important;
+}
+
+scale highlight,
+progressbar progress {
+    background-color: #ebdbb2 !important;
+    border-color: #1d2021 !important;
+}

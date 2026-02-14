@@ -1,0 +1,33 @@
+{
+  "version": 3,
+  "responderUsername": "",
+  "initialLocation": "panel",
+  "requests": [],
+  "sessionId": "fc4876e4-47c9-48c3-9a2a-221639c5774d",
+  "creationDate": 1769918788051,
+  "lastMessageDate": 1769918788051,
+  "hasPendingEdits": false,
+  "inputState": {
+    "contrib": {
+      "chatDynamicVariableModel": []
+    },
+    "attachments": [],
+    "mode": {
+      "id": "ask",
+      "kind": "ask"
+    },
+    "inputText": "",
+    "selections": [
+      {
+        "startLineNumber": 1,
+        "startColumn": 1,
+        "endLineNumber": 1,
+        "endColumn": 1,
+        "selectionStartLineNumber": 1,
+        "selectionStartColumn": 1,
+        "positionLineNumber": 1,
+        "positionColumn": 1
+      }
+    ]
+  }
+}

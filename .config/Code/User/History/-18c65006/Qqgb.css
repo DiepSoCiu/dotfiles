@@ -1,0 +1,107 @@
+
+/* Gruvbox Dark Hard Theme Colors - Override Adwaita */
+@define-color accent_color #d79921;
+@define-color accent_fg_color #1d2021;
+@define-color accent_bg_color #d79921;
+@define-color window_bg_color #1d2021;
+@define-color window_fg_color #ebdbb2;
+@define-color headerbar_bg_color #1d2021;
+@define-color headerbar_fg_color #ebdbb2;
+@define-color popover_bg_color #282828;
+@define-color popover_fg_color #ebdbb2;
+@define-color view_bg_color #1d2021;
+@define-color view_fg_color #ebdbb2;
+@define-color card_bg_color #282828;
+@define-color card_fg_color #ebdbb2;
+@define-color sidebar_bg_color #1d2021;
+@define-color sidebar_fg_color #ebdbb2;
+@define-color sidebar_border_color #282828;
+@define-color sidebar_backdrop_color #1d2021;
+
+/* Additional Gruvbox Colors */
+@define-color destructive_color #cc241d;
+@define-color destructive_bg_color #cc241d;
+@define-color destructive_fg_color #fbf1c7;
+@define-color success_color #98971a;
+@define-color success_bg_color #98971a;
+@define-color success_fg_color #1d2021;
+@define-color warning_color #d79921;
+@define-color warning_bg_color #d79921;
+@define-color warning_fg_color #1d2021;
+@define-color error_color #cc241d;
+@define-color error_bg_color #cc241d;
+@define-color error_fg_color #fbf1c7;
+
+/* Apply colors to all widgets */
+window {
+    background-color: @window_bg_color;
+    color: @window_fg_color;
+}
+
+.background {
+    background-color: @window_bg_color;
+    color: @window_fg_color;
+}
+
+/* File Chooser */
+filechooser {
+    background-color: @window_bg_color;
+    color: @window_fg_color;
+}
+
+filechooser .sidebar {
+    background-color: @sidebar_bg_color;
+    color: @sidebar_fg_color;
+}
+
+/* Headers */
+headerbar {
+    background-color: @headerbar_bg_color;
+    color: @headerbar_fg_color;
+}
+
+/* Cards */
+.card {
+    background-color: @card_bg_color;
+    color: @card_fg_color;
+}
+
+/* Views/Lists */
+.view, 
+textview text,
+list,
+listview {
+    background-color: @view_bg_color;
+    color: @view_fg_color;
+}
+
+/* Buttons */
+button {
+    background-color: @card_bg_color;
+    color: @window_fg_color;
+}
+
+button:hover {
+    background-color: @accent_bg_color;
+    color: @accent_fg_color;
+}
+
+/* Entries */
+entry {
+    background-color: @view_bg_color;
+    color: @view_fg_color;
+    border-color: #504945;
+}
+
+/* Popovers */
+popover.background {
+    background-color: @popover_bg_color;
+    color: @popover_fg_color;
+}
+
+/* Selection */
+*:selected,
+selection {
+    background-color: @accent_bg_color;
+    color: @accent_fg_color;
+}

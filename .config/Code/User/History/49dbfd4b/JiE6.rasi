@@ -1,0 +1,28 @@
+/************************************************
+ * ROFI Color theme
+ * User: Daguhh
+ * Copyright: 2020 Daguhh
+ ***********************************************/
+
+@import "theme_base.rasi"
+
+
+* {
+    nord8: 	                    #689d6a;	
+    white:                       #ebdbb2;
+    black:                       #1d2021;
+    red:                         #cc241d;
+
+    foreground:                  @black;
+    background:                  @white;
+    foreground-normal:           @foreground;
+    background-normal:           @background;
+    foreground-urgent:           @nord8;
+    background-urgent:           @background-normal;
+    foreground-active:           @red;
+    background-active:           @background;
+    foreground-select:           @white;
+    background-select:           @red;
+    border:                      @red;
+    font:                       "FontAwesome 12";
+}

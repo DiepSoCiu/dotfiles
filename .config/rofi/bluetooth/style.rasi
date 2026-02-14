@@ -1,0 +1,269 @@
+/*****----- Gruvbox Color Scheme -----*****/
+* {
+    black:      #282828;
+    red:        #cc241d;
+    green:      #98971a;
+    yellow:     #d79921;
+    blue:       #458588;
+    purple:     #b16286;
+    aqua:       #689d6a;
+    gray:       #a89984;
+    brgray:     #928374;
+    brred:      #fb4934;
+    brgreen:    #b8bb26;
+    bryellow:   #fabd2f;
+    brblue:     #83a598;
+    brpurple:   #d3869b;
+    braqua:     #8ec07c;
+    white:      #ebdbb2;
+    bg0:        #282828;
+    bg1:        #3c3836;
+    bg2:        #504945;
+    bg3:        #665c54;
+    fg0:        #fbf1c7;
+    fg1:        #ebdbb2;
+    orange:     #d65d0e;
+    brorange:   #fe8019;
+
+    /* Transparency variants */
+    bg-trans:   rgba(40, 40, 40, 0.95);
+    selected:   rgba(80, 73, 69, 0.9);
+    urgent:     rgba(251, 73, 52, 0.4);
+}
+
+/*****----- Configuration -----*****/
+configuration {
+    show-icons:                 false;
+    disable-history:            false;
+    click-to-exit:             true;
+    location:                   0;
+    sidebar-mode:               true;
+}
+
+/*****----- Global Properties -----*****/
+* {
+    font:                       "JetBrainsMono Nerd Font 10";
+    background-color:           transparent;
+    text-color:                 @white;
+}
+
+/*****----- Main Window -----*****/
+window {
+    transparency:               "real";
+    location:                   center;
+    anchor:                     center;
+    fullscreen:                 false;
+    width:                      400px;
+    border-radius:              12px;
+    cursor:                     "default";
+    background-color:           @bg-trans;
+}
+
+/*****----- Main Box -----*****/
+mainbox {
+    enabled:                    true;
+    spacing:                    15px;
+    margin:                     0px;
+    padding:                    20px;
+    border:                     2px solid;
+    border-radius:              12px;
+    border-color:               @bg2;
+    background-color:           @bg0;
+    children:                   [ "inputbar", "message", "listview", "mode-switcher" ];
+}
+
+/*****----- Inputbar -----*****/
+inputbar {
+    enabled:                    true;
+    spacing:                    10px;
+    margin:                     0px;
+    padding:                    12px 16px;
+    border:                     0px;
+    border-radius:              8px;
+    border-color:               @brblue;
+    background-color:           @bg1;
+    text-color:                 @white;
+    children:                   [ "prompt", "entry" ];
+}
+
+prompt {
+    enabled:                    true;
+    background-color:           transparent;
+    text-color:                 @bryellow;
+}
+
+textbox-prompt-colon {
+    enabled:                    true;
+    expand:                     false;
+    str:                        "::";
+    background-color:           transparent;
+    text-color:                 @brblue;
+}
+
+entry {
+    enabled:                    true;
+    background-color:           transparent;
+    text-color:                 @white;
+    cursor:                     text;
+    placeholder:                "Search...";
+    placeholder-color:          @gray;
+}
+
+/*****----- Message -----*****/
+message {
+    enabled:                    true;
+    margin:                     0px;
+    padding:                    10px;
+    border:                     0px;
+    border-radius:              8px;
+    background-color:           @bg1;
+    text-color:                 @white;
+}
+
+textbox {
+    background-color:           transparent;
+    text-color:                 @white;
+    vertical-align:             0.5;
+    horizontal-align:           0.0;
+}
+
+error-message {
+    padding:                    15px;
+    border:                     2px solid;
+    border-radius:              8px;
+    border-color:               @red;
+    background-color:           @bg0;
+    text-color:                 @brred;
+}
+
+/*****----- Listview -----*****/
+listview {
+    enabled:                    true;
+    columns:                    1;
+    lines:                      8;
+    cycle:                      true;
+    dynamic:                    true;
+    scrollbar:                  false;
+    layout:                     vertical;
+    reverse:                    false;
+    fixed-height:               true;
+    fixed-columns:              true;
+
+    spacing:                    5px;
+    margin:                     0px;
+    padding:                    0px;
+    border:                     0px;
+    border-radius:              0px;
+    background-color:           transparent;
+    text-color:                 @white;
+    cursor:                     "default";
+}
+
+scrollbar {
+    handle-width:               5px;
+    handle-color:               @brblue;
+    border-radius:              8px;
+    background-color:           @bg2;
+}
+
+/*****----- Elements -----*****/
+element {
+    enabled:                    true;
+    spacing:                    10px;
+    margin:                     0px;
+    padding:                    10px 12px;
+    border:                     0px solid;
+    border-radius:              6px;
+    background-color:           transparent;
+    text-color:                 @white;
+    cursor:                     pointer;
+}
+
+element normal.normal {
+    background-color:           transparent;
+    text-color:                 @white;
+}
+
+element normal.urgent {
+    background-color:           @urgent;
+    text-color:                 @brred;
+}
+
+element normal.active {
+    background-color:           transparent;
+    text-color:                 @brgreen;
+}
+
+element selected.normal {
+    background-color:           @selected;
+    text-color:                 @bryellow;
+    border:                     0px 0px 0px 3px;
+    border-color:               @bryellow;
+}
+
+element selected.urgent {
+    background-color:           @urgent;
+    text-color:                 @brred;
+}
+
+element selected.active {
+    background-color:           @selected;
+    text-color:                 @brgreen;
+}
+
+element alternate.normal {
+    background-color:           transparent;
+    text-color:                 @white;
+}
+
+element alternate.urgent {
+    background-color:           transparent;
+    text-color:                 @brred;
+}
+
+element alternate.active {
+    background-color:           transparent;
+    text-color:                 @brgreen;
+}
+
+element-icon {
+    background-color:           transparent;
+    text-color:                 inherit;
+    size:                       24px;
+    cursor:                     inherit;
+}
+
+element-text {
+    background-color:           transparent;
+    text-color:                 inherit;
+    highlight:                  inherit;
+    cursor:                     inherit;
+    vertical-align:             0.5;
+    horizontal-align:           0.0;
+}
+
+/*****----- Mode Switcher (Tabs) -----*****/
+mode-switcher{
+    enabled:                    true;
+    spacing:                    10px;
+    margin:                     10px 0px 0px 0px;
+    padding:                    0px;
+    border:                     0px;
+    background-color:           transparent;
+    text-color:                 @white;
+}
+
+button {
+    padding:                    12px 16px;
+    border:                     0px;
+    border-radius:              8px;
+    background-color:           @bg1;
+    text-color:                 @gray;
+    cursor:                     pointer;
+}
+
+button selected {
+    background-color:           @selected;
+    text-color:                 @bryellow;
+    font-weight:                bold;
+}

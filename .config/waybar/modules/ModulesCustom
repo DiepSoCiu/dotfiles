@@ -1,0 +1,68 @@
+
+{
+
+// Night light (Hyprsunset)
+"custom/nightlight": {
+	"return-type": "json",
+	"exec": "$HOME/.config/hypr/scripts/Hyprsunset.sh status",
+	"interval": 3,
+	"format": "{text}",
+	"min-length": 2,
+	"on-click": "$HOME/.config/hypr/scripts/Hyprsunset.sh toggle",
+	"tooltip": true,
+	"tooltip-format": "Night light toggle",
+	"escape": false
+},
+
+"custom/power": {
+	"format": "⏻ ",
+	"on-click": "~/.config/rofi/powermenu/type-1/powermenu.sh",
+	"tooltip": false,
+},
+
+// Separators
+"custom/separator#dot": {
+	"format": "",
+	"interval": "once",
+	"tooltip": false
+},
+"custom/separator#dot-line": {
+	"format": "",
+	"interval": "once",
+	"tooltip": false
+},
+"custom/separator#line": {
+	"format": "|",
+	"interval": "once",
+	"tooltip": false
+},
+"custom/separator#blank": {
+	"format": "",
+	"interval": "once",
+	"tooltip": false
+},
+"custom/separator#blank_2": {
+	"format": "  ",
+	"interval": "once",
+	"tooltip": false
+},
+"custom/separator#blank_3": {
+	"format": "   ",
+	"interval": "once",
+	"tooltip": false
+},
+
+"custom/minimize": {
+    "format": "Minimize",
+    "on-click": "~/.config/rofi/minimize/rofi-minimize.sh",
+},
+
+"custom/input_method": {
+        "format": "<span size='12500'>{}</span>",
+        "exec": "~/.config/hypr/scripts/input-method.sh",
+        "on-click": "~/.config/hypr/scripts/input-method.sh toggle",
+        "interval": 1,
+        "tooltip": false
+},
+
+}

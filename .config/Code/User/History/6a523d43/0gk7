@@ -1,0 +1,16 @@
+#!/bin/bash
+export QT_QPA_PLATFORM=xcb
+export QT_QPA_PLATFORMTHEME=xdgdesktopportal
+
+# Check if this is a forward-search call
+if [[ "$*" == *"--forward-search"* ]]; then
+    # Forward search - don't toggle, just pass through
+    exec /usr/bin/sioyek-bin "$@"
+else
+    # Normal open - start and toggle
+    /usr/bin/sioyek-bin "$@" &
+    
+    # Send toggle commands
+    /usr/bin/sioyek-bin --execute-command toggle_synctex
+    /usr/bin/sioyek-bin --execute-command toggle_custom_color
+fi
